@@ -1,0 +1,90 @@
+.header {
+  padding-top: 90px;
+
+  &__link {
+    font-size: 1.286rem;
+    text-transform: uppercase;
+    color: $textcolor;
+    transition: $millis;
+
+    &:hover,
+    &_active {
+      color: #2e2e2e;
+      text-shadow: 0 0 1px #000;
+    }
+  }
+
+  &__bottom-line {
+    padding: 34px 0px 20px;
+  }
+
+  &__open,
+  &__close {
+    width: 34px;
+    height: 34px;
+    border: 0;
+    padding: 0;
+    margin: 0 0 0 auto;
+    font-size: 2rem;
+    position: relative;
+    background-color: transparent;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  &__close {
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  &__search {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    outline: 0;
+    padding-right: 32px;
+    padding-left: 10px;
+    transition: $millis;
+
+    &:focus {
+      box-shadow: 0 0 0 1px #2e2e2e;
+      border-color: #2e2e2e;
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    border: 0;
+    color: #ededed;
+    background-color: transparent;
+    transition: $millis;
+    font-size: 1rem;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__separator {
+    border-top: 2px solid #6e6e6e;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}

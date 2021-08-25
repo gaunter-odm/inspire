@@ -1,0 +1,44 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 25px;
+
+  &__head {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-image: url(../images/dist/border.png);
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: $textcolor;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
+
+    &_loner {
+      display: inline-block;
+      margin-top: 20px !important;
+    }
+  }
+
+  &__copy {
+    padding-top: 130px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+  }
+}

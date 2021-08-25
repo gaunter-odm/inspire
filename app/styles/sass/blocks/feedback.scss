@@ -1,0 +1,101 @@
+.feedback {
+  &__separator {
+    margin-right: -40px;
+    margin-left: -40px;
+    margin-top: 130px;
+    height: 2px;
+    background-color: #6e6e6e;
+  }
+
+  &__image-wrap {
+    position: relative;
+    overflow: hidden;
+
+    &:hover .share {
+      transform: translateY(0);
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__head {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+  }
+
+  &__desc {
+    font-size: 1rem;
+    position: relative;
+    line-height: 1.3;
+  }
+
+  &__more {
+    color: $textcolor;
+    text-decoration: underline;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    padding: 20px 25px;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    transition: $millis;
+    font-size: 1rem;
+
+    &:focus {
+      box-shadow: 0 0 0 1px #2a292c;
+      border-color: #2a292c;
+    }
+
+    &::placeholder {
+      color: #9f9f9f;
+    }
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__submit {
+    flex: 0;
+    align-self: flex-start;
+    background-color: #2a292c;
+    border: 0;
+    border-radius: 8px;
+    color: $textcolor;
+    letter-spacing: 4px;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    transition: $millis;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__link {
+    margin-top: auto;
+    text-decoration: underline;
+    color: $textcolor;
+  }
+}

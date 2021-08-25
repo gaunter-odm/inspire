@@ -1,0 +1,52 @@
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+  content: "\e800";
+}
+.icon-mail:before {
+  content: "\e801";
+}
+.icon-left:before {
+  content: "\e802";
+}
+.icon-right:before {
+  content: "\e803";
+}
+.icon-down:before {
+  content: "\e804";
+}
+.icon-heart-broken:before {
+  content: "\f028";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-facebook:before {
+  content: "\f300";
+}
+.icon-twitter:before {
+  content: "\f302";
+}
+.icon-search:before {
+  content: "\e805";
+}
+.icon-menu:before {
+  content: "\f0c9";
+}
+.icon-cancel:before {
+  content: "\e806";
+}
